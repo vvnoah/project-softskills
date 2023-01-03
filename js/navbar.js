@@ -2,16 +2,11 @@ $(function(){
     $("#nav-placeholder").load("../html/navbar.html");
 });
 
-var state = "close";
-
 function toggle() {
-    if (state == "open"){
-        document.getElementById("foldmenu").style.visibility = "hidden";
-        state = "close";
+    const foldmenu = document.getElementById("foldmenu");
+    if (foldmenu.style.display === "block") {
+      foldmenu.style.display = "none";
+    } else {
+      foldmenu.style.display = "block";
     }
-    else {
-        document.getElementById("foldmenu").style.visibility = "visible";
-        state = "open";
-    }
-    
   }

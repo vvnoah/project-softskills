@@ -1,58 +1,65 @@
-ul {
+nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
-}
-
-li {
+  }
+  
+  nav ul {
+    list-style: none;
+    height: 50px;
+    margin: 0;
+    padding-left: 0;
+  }
+  
+  nav li {
     float: left;
-}
-
-li a {
+    height: 50px;
+  }
+  
+  nav li a {
     display: block;
     color: white;
     font-weight: bold;
     text-align: center;
-    padding: 14px 16px;
+    padding: 16px 16px;
     text-decoration: none;
-}
-
-li a:hover {
+  }
+  
+  nav li a:hover {
     background-color: #111;
-}
-
-#hamburger{
+  }
+  
+  nav #hamburger {
     float: right;
     display: none;
-}
-
-#hamburger img{
-    padding: 0px;
+  }
+  
+  nav #hamburger img {
+    padding: 0;
     width: 20px;
-}
-
-@media screen and (max-width: 1000px){
-    #mainNav li{
-        
-    }
-    #hamburger{
-        display: block;
-        visibility: visible;
-    }
-}
-
-#foldmenu{
-    visibility: hidden;
-    display: block;
+  }
+  
+  nav #foldmenu {
     right: 8px;
+    display: none;
     position: absolute;
-    width:130px;
-}
+    width: 130px;
+    background-color: #333;
+  }
+  
+  nav #foldmenu li {
+    width: 130px;
+  }
+  
+  @media screen and (max-width: 1000px) {
 
-#foldmenu li{
-    display: block;
-    width:130px;
-}
+    nav #mainNav li:not(#hamburger){
+        display: none;
+    }
 
+    nav #hamburger {
+      display: block;
+    }
+  }
