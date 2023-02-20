@@ -4,6 +4,7 @@ nav {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    border-radius: 10px;
   }
   
   nav ul {
