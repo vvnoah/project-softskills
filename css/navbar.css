@@ -1,4 +1,4 @@
-nav {
+.mainNav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -7,19 +7,19 @@ nav {
     border-radius: 10px;
   }
   
-  nav ul {
+  .mainNav ul {
     list-style: none;
     height: 50px;
     margin: 0;
     padding-left: 0;
   }
   
-  nav li {
+  .mainNav li {
     float: left;
     height: 50px;
   }
   
-  nav li a {
+  .mainNav li a {
     display: block;
     color: white;
     font-weight: bold;
@@ -28,21 +28,21 @@ nav {
     text-decoration: none;
   }
   
-  nav li a:hover {
+  .mainNav li a:hover {
     background-color: #111;
   }
   
-  nav #hamburger {
+  .mainNav #hamburger {
     float: right;
     display: none;
   }
   
-  nav #hamburger img {
+  .mainNav #hamburger img {
     padding: 0;
     width: 20px;
   }
   
-  nav #foldmenu {
+  .mainNav #foldmenu {
     right: 8px;
     display: none;
     position: absolute;
@@ -50,17 +50,17 @@ nav {
     background-color: #333;
   }
   
-  nav #foldmenu li {
+  .mainNav #foldmenu li {
     width: 130px;
   }
   
   @media screen and (max-width: 1000px) {
 
-    nav #mainNav li:not(#hamburger){
+    .mainNav #listNav li:not(#hamburger){
         display: none;
     }
 
-    nav #hamburger {
+    .mainNav #hamburger {
       display: block;
     }
   }
